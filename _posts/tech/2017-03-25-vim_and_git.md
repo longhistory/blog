@@ -16,9 +16,16 @@ git remote add origin git@github.com:username/xxxx.git
 
 git push -u origin master
 
+git remote -v
+
+git branch --set-upstream dev origin/dev
+
 ## git log with graph##
 git log --graph --pretty=oneline --abbrev-commit
 
+git log --pretty=oneline --abbrev-commit
+
+git config --global alias.lg "log --graph --pretty=format:'%h - %d - %s (%cr) %an' --abbrev-commit"
 ## git stash ##
 git stash
 
@@ -33,6 +40,17 @@ git stash pop
 git stash list
 
 git stash apply stash@\{0\}
+
+## git tag ##
+git tag v0.9 6224937
+
+命令git push origin <tagname>可以推送一个本地标签；
+
+命令git push origin --tags可以推送全部未推送过的本地标签；
+
+命令git tag -d <tagname>可以删除一个本地标签；
+
+命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
 
 <br>
 <br>
