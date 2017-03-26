@@ -5,11 +5,14 @@ categories: tech
 ---
 # vim and git#
 
-## Delete empty line ##
+## Vim delete empty line ##
 :g/^$/d
 
 ## Find previous git commit ##
 git reflog
+
+## checkout previous version file ##
+git checkout 32323ade23 filename
 
 ## git remote related ##
 git remote add origin git@github.com:username/xxxx.git
