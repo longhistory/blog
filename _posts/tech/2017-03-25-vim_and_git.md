@@ -19,6 +19,20 @@ git push -u origin master
 ## git log with graph##
 git log --graph --pretty=oneline --abbrev-commit
 
+## git stash ##
+git stash
+
+git stash list
+
+git stash apply
+
+git stash drop
+
+git stash pop
+
+git stash list
+
+git stash apply stash@\{0\}
 
 <br>
 <br>
