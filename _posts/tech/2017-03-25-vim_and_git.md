@@ -13,7 +13,12 @@ git reflog
 
 ## git remote related ##
 git remote add origin git@github.com:username/xxxx.git
+
 git push -u origin master
+
+## git log with graph##
+git log --graph --pretty=oneline --abbrev-commit
+
 
 <br>
 <br>
