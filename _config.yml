@@ -16,5 +16,5 @@
 title: Clean的收藏
 description: > # this means to ignore newlines until "baseurl:"
   人心生一念，天地尽皆知；善恶若无报，乾坤必有私。亏心者眼前虽得小利，久后必然害己，不可不三思而后行。
-baseurl: /blog # the subpath of your site, e.g. /blog
+baseurl: /clean_collecting # the subpath of your site, e.g. /blog
 author: Clean Li
