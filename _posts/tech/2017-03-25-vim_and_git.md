@@ -5,6 +5,11 @@ categories: tech
 ---
 # vim and git#
 
+## 自动折行 ##
+自动折行 是把长的一行用多行显示 , 不在文件里加换行符用<br> 
+:set wrap 设置自动折行<br>
+:set nowrap 设置不自动折行<br>
+
 ## Vim delete empty line ##
 :g/^$/d
 
