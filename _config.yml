@@ -18,3 +18,4 @@ description: > # this means to ignore newlines until "baseurl:"
   人心生一念，天地尽皆知；善恶若无报，乾坤必有私。
 baseurl: /clean_collecting # the subpath of your site, e.g. /blog
 author: Clean Li
+google_analytics: true
