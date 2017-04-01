@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span><br>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
