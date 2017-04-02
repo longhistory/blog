@@ -18,11 +18,11 @@ layout: base
   {% include google-analytics.html %}
   {% endif %}
 </head>
-<header class="site-header" role="banner">
+<header role="banner">
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+    <img alt="Cl" src="{{ site.baseurl }}/images/clx.jpg" height="90" width="90">
 
     <nav class="site-nav">
       <span class="menu-icon">
@@ -45,8 +45,9 @@ layout: base
   </div>
 
 </header>
-      <main class="page-content" aria-label="Content">
+      <main>
         <div class="wrapper">
+	  <h2>{{ site.title }}</h2>
           <ul>
             {% for post in site.posts %}
               <li>
@@ -57,6 +58,7 @@ layout: base
           </ul>
         </div>
       </main>
+      <hr >
 <footer class="site-footer">
 
   <div class="wrapper">
@@ -77,7 +79,6 @@ layout: base
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
         </ul>
-	<img alt="Cl" src="{{ site.baseurl }}/images/clx.jpg" height="60" width="60">
       </div>
 
       <div class="footer-col footer-col-2">
