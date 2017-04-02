@@ -16,7 +16,7 @@
 title: Clean的收藏
 description: > # this means to ignore newlines until "baseurl:"
   青门种瓜人，旧日东陵侯。
-  富贵故如此，营营何所求。
+  富贵固如此，营营何所求。
 baseurl: /clean_collecting # the subpath of your site, e.g. /blog
 author: Clean Li
 google_analytics: true

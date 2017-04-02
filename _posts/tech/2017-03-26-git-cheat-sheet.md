@@ -7,7 +7,7 @@ Git and Git Flow Cheat Sheet[![Awesome](https://cdn.rawgit.com/sindresorhus/awes
 ===============
 <hr>
 <p align="center">
-	<img alt="Git" src="/clean_collecting/images/gitsheetImg/git-logo.png" height="190" width="455">
+	<img alt="Git" src="{{ site.baseurl }}/images/gitsheetImg/git-logo.png" height="190" width="455">
 </p>
 <hr>
 # Other Available Languages:
@@ -608,13 +608,13 @@ git flow hotfix finish VERSION
 
 ### Commands
 <p align="center">
-	<img alt="Git" src="/clean_collecting/images/gitsheetImg/git-flow-commands.png" height="270" width="460">
+	<img alt="Git" src="{{ site.baseurl }}/images/gitsheetImg/git-flow-commands.png" height="270" width="460">
 </p>
 <hr>
 
 ### Git flow schema
 
 <p align="center">
-	<img alt="Git" src="/clean_collecting/images/gitsheetImg/git-flow-commands-without-flow.png">
+	<img alt="Git" src="{{ site.baseurl }}/images/gitsheetImg/git-flow-commands-without-flow.png">
 </p>
 <hr>
