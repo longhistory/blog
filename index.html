@@ -18,12 +18,11 @@ layout: base
   {% include google-analytics.html %}
   {% endif %}
 </head>
-<header role="banner">
 
   <div class="wrapper">
 
-    <img alt="Cl" src="{{ site.baseurl }}/images/clx.jpg" height="90" width="90">
 
+    <h2 class="site-hometitle">{{ site.title }}</h2>
     <nav class="site-nav">
       <span class="menu-icon">
         <svg viewBox="0 0 18 15" width="18px" height="15px">
@@ -44,10 +43,11 @@ layout: base
 
   </div>
 
-</header>
       <main>
         <div class="wrapper">
-	  <h2>{{ site.title }}</h2>
+        <img alt="Cl" src="{{ site.baseurl }}/images/clx.jpg" height="90" width="90">
+        <br>
+        <br>
           <ul>
             {% for post in site.posts %}
               <li>
