@@ -11,15 +11,26 @@ categories: tech
 
 
  共分为以下几个重要步骤
+
  安装 Ruby
+
  安装 DevKit
+
  安装 Jekyll
+
  安装 Pygments
+
  安装 Python
+
  安装 ‘Easy Install’
+
  安装 Pygments
+
  启动 Jekyll
+
  故障诊断
+
+>引用部分是我自己的安装记录以便对照，我的环境是win8 64bit，先安装git 64bit，然后使用git bash为终端
 
 ## 安装 Ruby
 
@@ -44,6 +55,8 @@ categories: tech
  输出示例：
 
  ruby 2.0.0p451 (2014-02-24) [x64-mingw32]
+
+>使用的版本为rubyinstaller-2.3.3-x64，勾选 “Add Ruby executables to your PATH”，安装正常
 
 ## 安装 DevKit
 
@@ -79,6 +92,9 @@ categories: tech
 
  ruby dk.rb install
 
+>版本为DevKit-mingw64-64-4.7.2-20130224-1432-sfx，解压到C:\DevKit。
+>notepad config.yml，这一步不用加那一行，一切正常
+
 ## 安装 Jekyll
 
  确保 gem 已经正确安装
@@ -93,13 +109,15 @@ categories: tech
 
  gem install jekyll
 
+>按以上步骤安装正常
+
 ## 安装 Pygments
 
  Jekyll 里默认的语法高亮插件是 Pygments。 它需要安装 Python 并在网站的配置文件\_config.yml 里将 highlighter 的值设置为pygments。
 
  不久之前，Jekyll 还添加另一个高亮引擎名为 Rouge， 尽管暂时不如 Pygments 支持那么多的语言，但它是原生 Ruby 程序，而不需要使用 Python。 更多信息请点此关注。
 
-## 安装 Python
+### 安装 Python
 
  前往 http://www.python.org/download/
 
@@ -117,7 +135,9 @@ categories: tech
 
  Python 2.7.6
 
-## 安装 ‘Easy Install’
+>安装路径为C:\Python27，添加到PATH，开新的终端窗口，测试安装成功
+
+### 安装 ‘Easy Install’
 
  浏览 https://pypi.python.org/pypi/setuptools#installation-instructions 来查看详细的安装指南。
 
@@ -127,7 +147,9 @@ categories: tech
 
  添加 ‘Python Scripts’ 路径 (如： C:\Python27\Scripts) 至 PATH
 
- 安装 Pygments
+>这一步不用，因为Pygments已经自带了
+
+### 安装 Pygments
 
  确保 easy\_install 已经正确安装
 
@@ -140,6 +162,8 @@ categories: tech
  使用 “easy\_install” 来安装 Pygments
 
  easy\_install Pygments
+
+>这一步不用，因为Pygments已经自带了
 
 ## 启动 Jekyll
 
