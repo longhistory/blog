@@ -12,23 +12,15 @@ categories: tech
 
  共分为以下几个重要步骤
 
- 安装 Ruby
-
- 安装 DevKit
-
- 安装 Jekyll
-
- 安装 Pygments
-
- 安装 Python
-
- 安装 ‘Easy Install’
-
- 安装 Pygments
-
- 启动 Jekyll
-
- 故障诊断
+ - 安装 Ruby
+ - 安装 DevKit
+ - 安装 Jekyll
+ - 安装 Pygments<br>
+ 1 安装 Python  
+ 2 安装 ‘Easy Install’  
+ 3 安装 Pygments
+ - 启动 Jekyll
+ - 故障诊断
 
 >引用部分是我自己的安装记录以便对照，我的环境是win8 64bit，先安装git 64bit，然后使用git bash为终端
 
@@ -175,9 +167,18 @@ categories: tech
 
  jekyll serve
 
+>这一步遇到错误  
+>`The full error message from Ruby is: 'cannot load such file -- bundler'`  
+>运行这个命令解决  
+>`gem install bundler`  
+>还有一个error   
+>`Could not find addressable-2.5.0 in any of the sources (Bundler::GemNotFound)`   
+>run this command:  
+>`bundle install`
+
 ## 故障诊断
 
- 错误信息：
+ - 错误信息：
 
  “python” is not recognized as an internal or external command, operable program or batch file.
 
@@ -197,7 +198,7 @@ categories: tech
 
  重启命令行
 
- 错误信息：
+ - 错误信息：
 
  ERROR:  Error installing jekyll:
 
@@ -225,7 +226,7 @@ categories: tech
 
  尝试解法： 重新安装 Ruby，这次请不要使用带有空格的路径，或者请直接选择使用默认路径。
 
- 错误信息：
+ - 错误信息：
 
  Generating... Liquid Exception: No such file or directory - python c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/pygments.rb-0.4.2/lib/pygments/mentos.py in 2013-04-22-yizeng-hello-world.md
 
@@ -233,7 +234,7 @@ categories: tech
 
  尝试解法： 首先请确保 Pygments 已成功安装且 Python 的 PATH 设置正确未包含空格和最后多余的斜杠。 然后重启命令行。如果依旧失败，请尝试注销并重新登录 Windows。 甚至使用终极解法，重启电脑。
 
- 错误信息：
+ - 错误信息：
 
  Generating... Liquid Exception: No such file or directory - /bin/sh in \_posts/2013-04-22-yizeng-hello-world.md
 
@@ -245,7 +246,7 @@ categories: tech
 
  gem install pygments.rb –version 0.5.0
 
- 错误信息：
+ - 错误信息：
 
  c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/dependency.rb:296:in `to\_specs': Could not find 'pygments.rb' (~> 0.4.2) - did find: [pygments.rb-0.5.0] (Gem::LoadError)
 
@@ -259,7 +260,7 @@ categories: tech
 
  from c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/core\_ext/kernel\_gem.rb:48:in`gem'
 
- from c:/Ruby200-x64/bin/jekyll:22:in `<main>'`
+ from c:/Ruby200-x64/bin/jekyll:22:in '<main>'
 
  可能原因：如错误信息所述，找不到 pygments.rb 0.4.2，仅找到 pygments.rb 0.5.0。 （此问题出现于此文初稿时的 Jekyll 版本，现版本应已修复）
 
@@ -270,7 +271,7 @@ categories: tech
 
  gem install pygments.rb –version “=0.4.2”
 
- 错误信息：
+ - 错误信息：
 
  Generating... You are missing a library required for Markdown. Please run:
 
@@ -289,7 +290,7 @@ categories: tech
 
  gem install rdiscount
 
- 错误信息：
+ - 错误信息：
 
  c:/Ruby200-x64/lib/ruby/site\_ruby/2.0.0/rubygems/core\_ext/kernel\_require.rb:55:in `require': cannot load such file -- wdm (LoadError)
 
@@ -307,4 +308,7 @@ categories: tech
 
  gem install wdm
 
- 8.为了能够让这里网站正常运行，这里需要删除\_post文件夹里的文件（应该有一个xxxx-xx-xx-welcome-to- jekyll.markdown字样的文件），因为这个文件内部使用了语法高亮插件（另外不删，则可以修改配置文件禁用该语法高亮插件，即修改根目录下 \_config.yml中的pygments: true为false便可。），这个需要另外安装，不再本文范围内，不删会导致生成的静态页面有问题，因时间有限本文暂不提此问题。
+ - 注意
+
+ 为了能够让这里网站正常运行，这里需要删除\_post文件夹里的文件（应该有一个xxxx-xx-xx-welcome-to- jekyll.markdown字样的文件），因为这个文件内部使用了语法高亮插件（另外不删，则可以修改配置文件禁用该语法高亮插件，即修改根目录下 \_config.yml中的pygments: true为false便可。），这个需要另外安装，不再本文范围内，不删会导致生成的静态页面有问题，因时间有限本文暂不提此问题。
+
