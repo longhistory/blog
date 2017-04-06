@@ -127,7 +127,7 @@ categories: tech
 
  Python 2.7.6
 
->安装路径为C:\Python27，添加到PATH，开新的终端窗口，测试安装成功
+>版本为python-2.7.13.msi，安装路径为C:\Python27，添加到PATH，开新的终端窗口，测试安装成功
 
 ### 安装 ‘Easy Install’
 
