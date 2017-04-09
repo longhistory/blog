@@ -26,7 +26,6 @@
 
 .site-title {
   font-size: 16px;
-  font-weight: 300;
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -34,7 +33,6 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
   }
 }
 
@@ -178,6 +176,8 @@
  */
 .page-content {
   padding: $spacing-unit 0;
+          text-align:justify;
+	  text-justify:inter-ideograph;
 }
 
 .page-heading {
@@ -213,39 +213,18 @@
 }
 
 .post-title {
-  font-size: 42px;
+  font-size: 32px;
   letter-spacing: -1px;
   line-height: 1;
 
   @include media-query($on-laptop) {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 
 .post-content {
   margin-bottom: $spacing-unit;
+          text-align:justify;
+	  text-justify:inter-ideograph;
 
-  h2 {
-    font-size: 32px;
-
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
-  }
-
-  h3 {
-    font-size: 26px;
-
-    @include media-query($on-laptop) {
-      font-size: 22px;
-    }
-  }
-
-  h4 {
-    font-size: 20px;
-
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
-  }
 }
