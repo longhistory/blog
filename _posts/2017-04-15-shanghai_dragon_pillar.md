@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【原创】上海延安路高架龙柱事件分析
+title: 【原创】上海延安路高架龙柱事件转载及分析
 date:   2017-04-15 13:15:26 +0800
 categories: thinking
 ---
