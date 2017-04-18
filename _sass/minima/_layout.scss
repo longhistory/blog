@@ -227,4 +227,12 @@
           text-align:justify;
 	  text-justify:inter-ideograph;
 
+  h1 {
+    font-size: 32px;
+
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+
 }
