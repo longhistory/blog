@@ -1,113 +1,59 @@
 ---
-layout: base
+layout: myhome
 ---
-  <body background="{{ site.baseurl }}/images/bg/bg7.png">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
-</head>
-
-<style type="text/css">
-  img
-  {
-    float:right
-  }
-</style>
-
-  <div class="wrapper">
-
-
-    <h2 class="site-hometitle">{{ site.title }}</h2>
-    <nav class="site-nav">
-      <span class="menu-icon">
-        <svg viewBox="0 0 18 15" width="18px" height="15px">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </span>
-
-      <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
-
-  </div>
-
-      <main>
-        <div class="wrapper">
-        <img alt="Cl" src="{{ site.baseurl }}/images/clx.jpg" height="90" width="90">
-          <ul>
-            {% for post in site.posts %}
-              <li>
-                <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span><br>
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </main>
-      <hr >
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-  <a class="footer-heading" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              By {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
-  </body>
+<h2>首页</h2>
+这里收集了一些对探寻世界奥秘与真相有意义的资料，同时也记录一下自己的思路。
+<br>
+<br>
+按照进化论，文明人类的历史不超过一万年，但史前文明的遗迹让人不得不重新思考这一结论，以下是一些史前文明的资料：
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-04-prehis %}">【转载】史前文明的一些证据及照片（多图）</a></li>
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-08-real_prehis_cul %}">【转载】真实存在的史前文明</a></li>
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-03-relics %}">【转载】不可思议的地球遗迹</a></li>
+于是，我们开始反思进化论：
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-15-evolution_fault_belief %}">【转载】三大证据相继破灭：进化论，一个错误的信仰？</a></li>
+<br>
+与此同时，一些我们认为属于“迷信”范围的事情，却渐渐看起来好像并非空穴来风，比如施工困难，找高僧帮助解决的上海延安路的龙柱事件：
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-15-shanghai_dragon_pillar %}">【原创】上海延安路高架龙柱事件转载及分析</a></li>
+如果上面这件事还觉得有疑惑，再来看号称“官方承认的灵异事件”——北顶娘娘庙事件。北顶娘娘庙显灵，造成奥运场址北移，让人从此不免心生敬畏。此事不但当时见诸报道，现在网上应该还可以找到视频
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-15-beiding_niangniang %}">【转载】史上最牛钉子户——水立方让位北顶娘娘庙</a></li>
+<br>
+自古流传，道德高深的修炼人死后肉身不腐。我们认为古人愚昧，所以并不认可其真实性。然而，河北香河老人去世后身体自然不腐至今，并且生前就对此事进行了预言。因此，是古人愚昧还是现代人愚昧这个问题可能还需要再思考一下：
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-01-xianghe_lady %}">【转载】香河老人数十年肉身不腐</a></li>
+历史上有很多传说记载石头上自然形成文字，今天竟然也出现了这么一件事情，经过地方、省、国家三级专家鉴定，目前已开放成为旅游景区，实在令人震惊：
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-10-cangzishi %}">【转载】贵州平塘藏字石</a></li>
+前台湾大学校长李嗣涔教授利用现代仪器观测研究儿童手指识字现象，意外发现了宗教神圣词汇与普通文字的不一样，即使面对没有人认识的藏文也是如此，这除了让人承认宗教背后有我们还不能认识的奥秘之外，我们无法进行合理解释
+<li><a href="{{ site.baseurl }}{% post_url 2015-05-29-impressions_about_SichengLi %}">【原创】李嗣涔手指识字特异功能研究演讲观感</a></li>
+<br>
+生与死的奥秘，人死后会如何？宗教中告诉我们，灵魂不死，轮回转世，我们曾经认为这只是传说。没想到西方的很多科学家不但对此深入研究，而且收集了很多这方面的实例。濒死体验，是人在经历了死亡后又出人意料的复活之后，告诉人们他们在死亡状态下的经历，这几乎证明了灵魂可以脱离肉体存在。这是我看了两个关于濒死体验的纪录片后的感想：
+<li><a href="{{ site.baseurl }}{% post_url 2014-03-28-documentary_beyound_life %}">【原创】穿越生命的纪录片</a></li>
+而很多西方医学界的科学家从前世记忆及催眠等角度对轮回转世现象的调查研究，更是揭示了宗教中讲的轮回转世极有可能是事实：
+<li><a href="{{ site.baseurl }}{% post_url 2017-03-29-recarn %}">【转载】西方医学界对轮回转世的研究</a></li>
+<br>
+更有神秘的预言现象，千年的历史其实早有剧本，这让固执的人们除了否认它的真实性之外，找不到合理的解释
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-22-tuibeitu %}">【转载】《推背图》金圣叹注释本</a></li>
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-22-meihua_poem %}">【转载】千古预言《梅花诗》</a></li>
+但是，如果我们不妄下断言，如果我们冷静的思考一下，如果我们承认有更高的智慧存在，也许可以理性思考一下这种情况下的逻辑会让我们得到什么信息？下面就是一篇这样的思考文章：
+<li><a href="{{ site.baseurl }}{% post_url 2017-03-24-yuyan %}">【转载】有预言流传必有大救世！</a></li>
+<br>
+这些都让我重新思考那些传说也许不象我们想的那么不靠谱，甚至思考宗教与传说中说的神佛存在的可能性
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-18-human_by_earth %}">【原创】关于泥土造人的传说</a></li>
+<li><a href="{{ site.baseurl }}{% post_url 2014-10-04-understanding_of_morality %}">【原创】关于传统道德的一点理解</a></li>
+<li><a href="{{ site.baseurl }}{% post_url 2015-08-27-right_way_vicissitudes %}">【原创】正道沧桑</a></li>
+这是另外一个传说：
+<li><a href="{{ site.baseurl }}{% post_url 2017-03-25-thousand-year %}">【转载】千年之约 一个古老的传说 正在兑现中</a></li>
+<br>
+人们也在思考神佛，也就是更高级的智慧存在的可能性：
+<li><a href="{{ site.baseurl }}{% post_url 2017-03-25-ten_questions %}">【转载】值得无神论者深深思考的十个问题</a></li>
+今天的人们也一直在追随神的脚步：
+<li><a href="{{ site.baseurl }}{% post_url 2017-03-25-astronauts %}">【转载】为何众多宇航员走上了信神的道路?</a></li>
+<br>
+这里收集的内容，是网上知名度比较高的一些资料，当然网络鱼龙混杂，经过对找到的资料进行去伪存真的思考与过滤后，收藏在此。当然还有更多的没有收录在这里，这些使我逐渐改变了对世界的看法，我不再迷信科学，其实科学与宗教也不是对立的，因为如果人们能保持开放的思想，它们很可能是一致的。而我也对修行与文化有了更多地兴趣，因为修行也许是探索宇宙与生命的另一种方法，而文化也许是前人对宇宙奥秘洞见的结果的承传，人们遵照它就能保持与天地和大自然的和谐
+<li><a href="{{ site.baseurl }}{% post_url 2017-03-25-xuyun %}">【转载】虚云老和尚一生中的难事奇事</a></li>
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-13-divine_culture_small_story %}">【转载】神传文化小故事</a></li>
+<br>
+当然，也有很多人认为思考这些完全没有意义，不如思考一些更现实的问题。个人认为，在面对具体现实的问题的时候，其实是依赖于每个人对世界与人生的基本看法的。大方向明确了，就可以如意的取舍那些具体的现实问题，当然个人认为思考这些问题意义包含但远不止这方面。关于这一点曾写过一篇文章：
+<li><a href="{{ site.baseurl }}{% post_url 2012-12-12-short_duration_of_life %}">【原创】生命的短暂</a></li>
+<br>
+这是佛教传说中的祥瑞之花，希望它真的能如传说那样给这个时代的我们带来好运
+<li><a href="{{ site.baseurl }}{% post_url 2017-04-19-ytplh %}">【转载】神奇的优昙婆罗花(多图)</a></li>
+<br>

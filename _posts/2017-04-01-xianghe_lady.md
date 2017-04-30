@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 【转载】香河老人数十年肉身不腐
+categories: miracle
 ---
 
 # 【转载】香河老人数十年肉身不腐 #

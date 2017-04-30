@@ -1,0 +1,40 @@
+---
+layout: myhome
+---
+<h2>分类浏览</h2>
+<h3>不可思议的事实</h3>
+<ul>
+  {% for post in site.categories.miracle %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span><br>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+<h3>思考</h3>
+<ul>
+  {% for post in site.categories.thinking %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span><br>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+<h3>历史文化及其他</h3>
+<ul>
+  {% for post in site.categories.his_cul %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span><br>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+<h3>技术备忘</h3>
+<ul>
+  {% for post in site.categories.tech %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span><br>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
