@@ -9,7 +9,7 @@ categories: miracle
 ![pic]({{ site.baseurl }}/images/shanghai_dragonpillar.jpg)<br>
 上海延安路高架龙柱
 
-再从网上转载一些文字来说明一下事情的来龙去脉。
+简单的说，当时上海建高架时，一个关键基础地桩怎么也打不下去，无计可施之下，只好请教上海玉佛寺的高僧。高僧同意帮忙，于是地桩竟然顺利的打下去，不过高僧此后不久便圆寂。今天人们能看到的痕迹是此地桩周身围上白钢及龙型纹饰，如图所示，而且这是上海唯一的一根雕龙的高架柱子。详情可以参考下面从网上转载的一些文字。
 
 以下来自百度百科：
 [上海延安路高架龙柱\_百度百科](http://baike.baidu.com/link?url=T2Z47zCxqz1OCZZP4kZF5jRoeSZ7EUOUJ8Rc5X2QnnrtzOWATcdcWJC2qwYRtjLtzCR3x5f2n0pYS3tBw6E\_8po15XbsuIQnud9HAdbi83ntQHzeqgx91tsJDP4ie5jPQtGp3Q1KmCGAPwzGyJRDX4WJlX3eQa\_EtEDIeOIO2PLsucbpLPL-vH6TrZlxGJz\_)
