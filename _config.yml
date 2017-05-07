@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Clean的收藏
+email: clean_li@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
   庄周梦胡蝶，胡蝶为庄周。
   一体更变易，万事良悠悠。
