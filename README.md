@@ -1,3 +1,3 @@
 # clean_collecting
 
-https://longhistory.github.io/clean_collecting/
+https://cleanli.github.io/clean_collecting/
