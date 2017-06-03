@@ -318,10 +318,9 @@ categories: tech
 ```
 gem install bundler
 gem install jekyll-paginate
-gem install addressable
 gem install addressable -v 2.5.0
 gem install sass -v 3.4.23
 gem install jekyll-feed -v 0.9.2
-gem uninstall sass 3.4.24
+gem uninstall sass -v 3.4.24
 jekyll serve
 ```
