@@ -312,3 +312,16 @@ categories: tech
 
  为了能够让这里网站正常运行，这里需要删除\_post文件夹里的文件（应该有一个xxxx-xx-xx-welcome-to- jekyll.markdown字样的文件），因为这个文件内部使用了语法高亮插件（另外不删，则可以修改配置文件禁用该语法高亮插件，即修改根目录下 \_config.yml中的pygments: true为false便可。），这个需要另外安装，不再本文范围内，不删会导致生成的静态页面有问题，因时间有限本文暂不提此问题。
 
+ - Update 20170603
+
+ 安装了Jekyll之后，还要安装下列：
+```
+gem install bundler
+gem install jekyll-paginate
+gem install addressable
+gem install addressable -v 2.5.0
+gem install sass -v 3.4.23
+gem install jekyll-feed -v 0.9.2
+gem uninstall sass 3.4.24
+jekyll serve
+```
